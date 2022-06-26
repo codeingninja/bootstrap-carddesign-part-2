@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root {
+  --cd-color-light-dark: #201c2b;
+  --cd-color-dark: #14121c;
+  --cd-color-white: #ffffff;
+  --cd-color-blue: #47cdee;
+  --cd-color-purple: #520bad;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  box-shadow: none !important;
+}
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'inter';
+  color: var(--cd-color-white);
+  background-color: var(--cd-color-dark);
+  font-weight: 400;
+}
+img {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                Globel style                                */
+/* -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.rounded-10 {
+  border-radius: 10px;
+}
+/* ------------------------------ Footer style ------------------------------ */
+
+.weburl {
+  font-size: 18px;
+  animation: colorchange 0.5s infinite alternate;
+}
+@keyframes colorchange {
+  0% {
+    color: #2fccef;
+  }
+  100% {
+    color: #520bad;
+  }
+}
+/* ------------------------------ header style ------------------------------ */
+.navbar-light,
+footer .row {
+  background-color: var(--cd-color-dark) !important;
+  border: 1px solid var(--cd-color-light-dark) !important;
+}
+.site-logo img {
+  transition: all 0.3s;
+}
+.site-logo:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.social .social-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #520bad;
+  background: -moz-linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  background: -webkit-linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  background: linear-gradient(130deg, #520bad 0%, #2fccef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#520BAD ",endColorstr="#2FCCEF  ",GradientType=1);
+  border-radius: 7px;
+}
+.social .social-icon i {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.social .social-icon:hover i {
+  color: #000000;
+}
+@media (max-width: 575px) {
+  .social {
+    max-width: 200px;
+  }
+}
+/* ------------------------------- Card style ------------------------------- */
+.card {
+  background-color: var(--cd-color-light-dark);
+}
+
+/* ------------------------------ Card Design 9 ----------------------------- */
+.cd-9 .card-img {
+  width: 70px;
+  height: 70px;
+}
+.cd-9 .list-style-circle li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.cd-9 .list-style-circle li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+/* ------------------------------ Card Design 10 ----------------------------- */
+.cd-10 .card-img {
+  width: 60px;
+  height: 60px;
+}
+.cd-10 .tags li a {
+  font-size: 11px;
+  color: var(--cd-color-white);
+  border-color: var(--cd-color-white);
+  background-color: transparent;
+  font-weight: 200;
+  transition: all 0.3s;
+}
+.cd-10 .tags li a:hover {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue) !important;
+  color: var(--cd-color-dark);
+}
+
+/* ------------------------------ Card Design 11 ----------------------------- */
+.cd-11 a.btn {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+/* ------------------------------ Card Design 12 ----------------------------- */
+.card.cd-12 .card-head img {
+  transition: all 0.3s;
+}
+.card.cd-12:hover .card-head img {
+  transform: scale(1.2);
+}
+.cd-12 .card-body .card-img {
+  width: 30px;
+  height: 30px;
+}
+
+.cd-12 .card-head {
+  height: 250px;
+  overflow: hidden;
+}
+.cd-12 .tags li {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+/* ------------------------------ Card Design 13 ----------------------------- */
+.card.cd-13 img {
+  transition: all 0.3s;
+}
+.card.cd-13:hover img {
+  transform: scale(1.2);
+}
+
+/* ------------------------------ Card Design 14 ----------------------------- */
+.cd-14-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+
+/* ------------------------------ Card Design 15 ----------------------------- */
+.cd-15 .cd-15-body-img img {
+  transition: all 0.3s;
+}
+.cd-15:hover .cd-15-body-img img {
+  transform: scale(1.2);
+}
+.cd-15 .tags li {
+  font-size: 11px;
+  font-weight: 200;
+}
+.cd-15 .tags li a {
+  font-size: 11px;
+  color: var(--cd-color-white);
+  border-color: var(--cd-color-white);
+  background-color: transparent;
+  font-weight: 200;
+  transition: all 0.3s;
+}
+.cd-15 .tags li a:hover {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue) !important;
+  color: var(--cd-color-dark);
+}
+
+/* ------------------------------ Card Design 16 ----------------------------- */
+.cd-16 .cd-16-card-img img {
+  transition: all 0.3s;
+}
+.cd-16:hover .cd-16-card-img img {
+  transform: scale(1.2);
+}
+.cd-16 .tags li {
+  font-size: 11px;
+  font-weight: 200;
+}
+.cd-16 .tags li a {
+  font-size: 11px;
+  color: var(--cd-color-white);
+  border-color: var(--cd-color-white);
+  background-color: transparent;
+  font-weight: 200;
+  transition: all 0.3s;
+}
+.cd-16 .tags li a:hover {
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue) !important;
+  color: var(--cd-color-dark);
+}
+.cd-16 a.btn {
+  font-size: 13px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: fit-content;
+  background-color: var(--cd-color-blue);
+  border-color: var(--cd-color-blue);
+  color: var(--cd-color-dark);
+}
+.cd-18 a.btn:hover {
+  background-color: var(--cd-color-purple);
+  border-color: var(--cd-color-purple);
+  color: var(--cd-color-white);
+}
